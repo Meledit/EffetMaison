@@ -10,18 +10,23 @@ import linkedin from "../images/linkedin.png"
 import X from "../images/twitter.png"
 import heropic from "../images/green.jpg"
 
-function Home( { setCart } ) {
+function Home( { setCart, refs } ) {
+
+  function handleClick() {
+    refs[1].current?.scrollIntoView();
+  }
+
   return (
     <>
         <BlurryBackground />
-        <div className='hero-section' id="Home">
+        <div className='hero-section' ref={refs[0]} id="Home">
           <div className='hero-cont'>
             <div className='hero-vbox'>
               <div className='hero-content'>
                 <h1 className='hero-title'>Votre atelier à domicile !</h1>
                 <div className='hero-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
               </div>
-              <a href='/EffetMaison/#Catalog' className='hero-button'>Get started</a>
+              <button onClick={() => handleClick()} className='hero-button'>Get started</button>
             </div>
             <img className='hero-picture' src={heropic} />
           </div>
@@ -29,7 +34,7 @@ function Home( { setCart } ) {
 
         <ScrollingBand />
 
-        <div className='who-section'id="Us" >
+        <div className='who-section' ref={refs[2]} id="Us" >
           <div className='who-cont'>
             <div className='who-content'>
               <h2 className='who-title'>Qui sommes nous ?</h2>
@@ -58,7 +63,7 @@ function Home( { setCart } ) {
           </div>
         </div>
 
-        <div className='products-section' id="Catalog">
+        <div className='products-section' ref={refs[1]} id="Catalog">
           <BlurryBackground />
           <div className='products-cont'>
             <h2 className='products-title'>Nos produits phares</h2>

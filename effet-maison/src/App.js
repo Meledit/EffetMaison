@@ -36,7 +36,7 @@ function App() {
     <Router>
       <Nav cart={cart} links={["Home", "Catalog", "Us"]} refs={[scrollToHome, scrollToCatalog, scrollToUs]} />
       <Routes>
-        <Route path="/" element={<Home setCart={add} />}/>
+        <Route path="/" element={<Home setCart={add} refs={[homeRef, catalogRef, usRef]} />}/>
         {/*  />
         <Route path="/account" element={<Account />} />
         <Route path="/cart" element={<Cart />} /> */}
