@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EffetMaison/static/css/main.d3f0b9f0.css",
-    "main.js": "/EffetMaison/static/js/main.55c0258d.js",
+    "main.js": "/EffetMaison/static/js/main.c2347095.js",
     "static/media/rose.jpg": "/EffetMaison/static/media/rose.d172e0dfe6fa58691fc2.jpg",
     "static/media/green.jpg": "/EffetMaison/static/media/green.efa9b3dd91bea50940ac.jpg",
     "static/media/card.jpg": "/EffetMaison/static/media/card.9ed7226db7b8c3a55f39.jpg",
@@ -12,10 +12,10 @@
     "static/media/logo.svg": "/EffetMaison/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/EffetMaison/index.html",
     "main.d3f0b9f0.css.map": "/EffetMaison/static/css/main.d3f0b9f0.css.map",
-    "main.55c0258d.js.map": "/EffetMaison/static/js/main.55c0258d.js.map"
+    "main.c2347095.js.map": "/EffetMaison/static/js/main.c2347095.js.map"
   },
   "entrypoints": [
     "static/css/main.d3f0b9f0.css",
-    "static/js/main.55c0258d.js"
+    "static/js/main.c2347095.js"
   ]
 }
