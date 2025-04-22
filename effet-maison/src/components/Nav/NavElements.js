@@ -2,13 +2,12 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const NavContainer = styled.div`
-    border: 1px solid red;
-
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     width: 85%;
     height: 75px;
+    max-width: 1250px;
     background: #fff;
     border-radius: 10px;
     margin-top: 5vh;
@@ -17,13 +16,14 @@ export const NavContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0px 45px 0px 45px;
+    z-index: 999;
 `;
 
-export const NavLogo = styled.img`
-  height: 65%;
-  aspect-ratio : 1;
-  object-fit: cover;
-  border-radius: 1000px;
+export const NavLogo = styled.div`
+  font-size: 1.25rem;
+  color: #000;
+  font-weight: bold;
+  font-style: italic;
 `;
 
 export const NavLinks = styled.div`
@@ -32,7 +32,7 @@ export const NavLinks = styled.div`
   gap: 15px;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.a`
   display: flex;
   flex-direction: column;
   color: #000;
@@ -49,7 +49,7 @@ export const NavLinkText = styled.div`
 export const NavLinkBar = styled.div`
   width: 100%;
   height: 5%;
-  background: #FF0000;
+  background: #E4AAB8;
   transition: 0.5s;
   transform-origin: center;
   transform: ${props => props.canShow ? "scaleX(100%)" : "scaleX(0%)"};
