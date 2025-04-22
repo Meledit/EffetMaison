@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav/Nav';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import React, {useState} from 'react';
 import BlurryBackground from './components/BlurryBackground/BlurryBackground';
 import Home from './pages/home';
