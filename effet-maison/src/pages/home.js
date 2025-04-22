@@ -21,7 +21,7 @@ function Home( { setCart } ) {
                 <h1 className='hero-title'>Votre atelier à domicile !</h1>
                 <div className='hero-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
               </div>
-              <a href='#Catalog' className='hero-button'>Get started</a>
+              <a href='/EffetMaison/#Catalog' className='hero-button'>Get started</a>
             </div>
             <img className='hero-picture' src={heropic} />
           </div>

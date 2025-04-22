@@ -12,7 +12,7 @@ function Nav( { cart ,links } ) {
         <NavLogo>L'Effet Maison</NavLogo>
         <NavLinks>
             {links.map((item, index) => (
-                <NavLink href={"#" + item} key={index} onClick={()=> setCurrent(index)}>
+                <NavLink href={"/EffetMaison/#" + item} key={index} onClick={()=> setCurrent(index)}>
                     <NavLinkText>{item}</NavLinkText>
                     <NavLinkBar canShow={current == index} />
                 </NavLink>
