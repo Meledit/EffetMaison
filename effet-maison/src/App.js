@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { useRef } from 'react';
 import Nav from './components/Nav/Nav';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import React, {useState} from 'react';
@@ -14,9 +15,26 @@ function App() {
     setCart(cart + 1)
   }
 
+
+  const catalogRef = useRef(null);
+  const homeRef = useRef(null);
+  const usRef = useRef(null);
+  
+  const scrollToCatalog = () => {
+    catalogRef.current?.scrollIntoView();
+  };
+
+  const scrollToHome = () => {
+    homeRef.current?.scrollIntoView();
+  };
+
+  const scrollToUs = () => {
+    usRef.current?.scrollIntoView();
+  };
+
   return (
     <Router>
-      <Nav cart={cart} links={["Home", "Catalog", "Us"]} />
+      <Nav cart={cart} links={["Home", "Catalog", "Us"]} refs={[scrollToHome, scrollToCatalog, scrollToUs]} />
       <Routes>
         <Route path="/" element={<Home setCart={add} />}/>
         {/*  />

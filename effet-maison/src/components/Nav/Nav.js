@@ -3,16 +3,21 @@ import { NavContainer, NavAccount, NavAccountPicture, NavCart, NavExtras, NavLin
 import logo from "../../images/logo.png"
 import account from "../../images/utilisateur.png"
 
-function Nav( { cart ,links } ) {
+function Nav( { cart , links, refs } ) {
 
     const [current, setCurrent] = React.useState(0);
+
+    function handleClick(i) {
+        setCurrent(i);
+        refs[i]();
+    }
 
   return (
     <NavContainer>
         <NavLogo>L'Effet Maison</NavLogo>
         <NavLinks>
             {links.map((item, index) => (
-                <NavLink href={"/EffetMaison/#" + item} key={index} onClick={()=> setCurrent(index)}>
+                <NavLink key={index} onClick={()=> handleClick(index)}>
                     <NavLinkText>{item}</NavLinkText>
                     <NavLinkBar canShow={current == index} />
                 </NavLink>
