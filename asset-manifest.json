@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/EffetMaison/static/css/main.d3f0b9f0.css",
-    "main.js": "/EffetMaison/static/js/main.e986f615.js",
+    "main.css": "/EffetMaison/static/css/main.39c3a6b7.css",
+    "main.js": "/EffetMaison/static/js/main.a851ccc0.js",
+    "static/media/sleepy.png": "/EffetMaison/static/media/sleepy.5071ec516d11c3a834f8.png",
+    "static/media/bg_green.jpg": "/EffetMaison/static/media/bg_green.ed26ace883e5c81a7c7c.jpg",
     "static/media/rose.jpg": "/EffetMaison/static/media/rose.d172e0dfe6fa58691fc2.jpg",
     "static/media/green.jpg": "/EffetMaison/static/media/green.efa9b3dd91bea50940ac.jpg",
     "static/media/card.jpg": "/EffetMaison/static/media/card.9ed7226db7b8c3a55f39.jpg",
+    "static/media/ruban.png": "/EffetMaison/static/media/ruban.323240fc058fb48bf99a.png",
     "static/media/twitter.png": "/EffetMaison/static/media/twitter.fae775e44b0c64f5f500.png",
     "static/media/instagram.png": "/EffetMaison/static/media/instagram.2c28393daeead3cdf982.png",
     "static/media/logo.png": "/EffetMaison/static/media/logo.af3ae49c7dae6c03c0e1.png",
     "static/media/utilisateur.png": "/EffetMaison/static/media/utilisateur.44ea40a3eb8dd7fed2a9.png",
+    "static/media/remise.png": "/EffetMaison/static/media/remise.f764d0cbabf54328f784.png",
+    "static/media/croix.png": "/EffetMaison/static/media/croix.a84c692c137f98881d72.png",
     "static/media/logo.svg": "/EffetMaison/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/EffetMaison/index.html",
-    "main.d3f0b9f0.css.map": "/EffetMaison/static/css/main.d3f0b9f0.css.map",
-    "main.e986f615.js.map": "/EffetMaison/static/js/main.e986f615.js.map"
+    "main.39c3a6b7.css.map": "/EffetMaison/static/css/main.39c3a6b7.css.map",
+    "main.a851ccc0.js.map": "/EffetMaison/static/js/main.a851ccc0.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3f0b9f0.css",
-    "static/js/main.e986f615.js"
+    "static/css/main.39c3a6b7.css",
+    "static/js/main.a851ccc0.js"
   ]
 }
