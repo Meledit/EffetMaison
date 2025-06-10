@@ -33,4 +33,5 @@ export const BlurryBackgroundCircle = styled.div`
     left: ${props => props.X}%;
     transform: translate(-50%, -50%);
     animation: ${idle} 20s linear infinite;
+    opacity: 1;
 `;

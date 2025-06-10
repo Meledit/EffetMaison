@@ -9,8 +9,9 @@ import insta from "../images/instagram.png"
 import linkedin from "../images/linkedin.png"
 import X from "../images/twitter.png"
 import heropic from "../images/green.jpg"
+import { Link } from 'react-router-dom';
 
-function Home( { setCart, refs } ) {
+function Home( { add, setPopupText, setIsActive, refs } ) {
 
   function handleClick() {
     refs[1].current?.scrollIntoView();
@@ -35,10 +36,11 @@ function Home( { setCart, refs } ) {
         <ScrollingBand />
 
         <div className='who-section' ref={refs[2]} id="Us" >
+          <div className='who-blur'></div>
           <div className='who-cont'>
             <div className='who-content'>
               <h2 className='who-title'>Qui sommes nous ?</h2>
-              <img className='who-image' src={rose} />
+              {/* <img className='who-image' src={rose} /> */}
               <div className='who-text'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -68,45 +70,15 @@ function Home( { setCart, refs } ) {
           <div className='products-cont'>
             <h2 className='products-title'>Nos produits phares</h2>
             <div className='products-cards'>
-              <Card setCart={setCart} />
-              <Card setCart={setCart} />
-              <Card setCart={setCart} />
+              <Card add={add} setPopupText={setPopupText} setIsActive={setIsActive} id={0} />
+              <Card add={add} setPopupText={setPopupText} setIsActive={setIsActive} id={1}/>
+              <Card add={add} setPopupText={setPopupText} setIsActive={setIsActive} id={2}/>
             </div>
+            <Link className='products-link' to='/search'>
+              Voir plus ...
+            </Link>
           </div>
         </div>
-
-        <footer>
-          <h2 className='footer-title'>L'effet maison</h2>
-          <div className='footer-content'>
-            <div className='footer-sub-content'>
-              <div className='footer-vbox'>
-                <h3>Need help ?</h3>
-                <div className='footer-list'>
-                  <a href='' className='footer-item'>Contact Us</a>
-                  <a href='' className='footer-item'>Blog</a>
-                </div>
-              </div>
-
-              <div className='footer-vbox'>
-                <h3>About Us</h3>
-                <div className='footer-list'>
-                  <a href='' className='footer-item'>FAQ</a>
-                  <a href='' className='footer-item'>Support</a>
-                </div>
-              </div>
-            </div>
-
-
-            <div className='footer-vbox'>
-              <h3>Community</h3>
-              <div className='footer-list'>
-                <a href='' className='footer-item'>Instagram</a>
-                <a href='' className='footer-item'>Linked In</a>
-                <a href='' className='footer-item'>X</a>
-              </div>
-            </div>
-          </div>
-        </footer>
     </>
   )
 }

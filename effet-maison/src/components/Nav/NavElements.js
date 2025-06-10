@@ -2,28 +2,29 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const NavContainer = styled.div`
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 85%;
-    height: 75px;
-    max-width: 1250px;
-    background: #fff;
-    border-radius: 10px;
-    margin-top: 5vh;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 65px;
+  max-width: 1250px;
+  background: #fff;
+  border-radius: 10px;
+  top: 5vh;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 45px 0px 45px;
-    z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 45px 0px 45px;
+  z-index: 999;
 `;
 
-export const NavLogo = styled.div`
-  font-size: 1.25rem;
+export const NavLogo = styled(Link)`
+  font-size: 1rem;
   color: #000;
   font-weight: bold;
   font-style: italic;
+  text-decoration: none;
 `;
 
 export const NavLinks = styled.div`
@@ -32,34 +33,35 @@ export const NavLinks = styled.div`
   gap: 15px;
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   display: flex;
   flex-direction: column;
   color: #000;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
 `;
 
 export const NavLinkText = styled.div`
   height: 95%;
   align-content: center;
+  cursor: pointer;
 `;
 
 export const NavLinkBar = styled.div`
   width: 100%;
   height: 5%;
-  background: #E4AAB8;
+  background:rgb(236, 202, 135);
   transition: 0.5s;
   transform-origin: center;
   transform: ${props => props.canShow ? "scaleX(100%)" : "scaleX(0%)"};
 `;
 
 export const NavExtras = styled.div`
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 100%;
 `;
 
 export const NavCart = styled(Link)`
@@ -84,7 +86,7 @@ export const NavCartNumber = styled.div`
   align-items: center;
   color: #fff;
   font-style: italic;
-  font-size: 1.25rem;
+  font-size: 1rem;
 `;
 
 export const NavCartText = styled.div`

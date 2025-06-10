@@ -1,0 +1,86 @@
+[
+  {
+    "id": 0,
+    "name": "Hydrating Face Cream",
+    "description": "A lightweight moisturizer that keeps your skin hydrated all day long.",
+    "price": 24.99,
+    "picture": "green.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Vitamin C Serum",
+    "description": "Brightens your complexion and reduces dark spots with concentrated Vitamin C.",
+    "price": 32.50,
+    "picture": "rose.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Matte Lipstick - Rose Red",
+    "description": "A long-lasting matte lipstick in a vibrant rose red shade.",
+    "price": 14.00,
+    "picture": "card.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Volumizing Mascara",
+    "description": "Add dramatic volume and length to your lashes with a single swipe.",
+    "price": 19.99,
+    "picture": "card.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Aloe Vera Toner",
+    "description": "Soothes and tones the skin, reducing redness and tightening pores.",
+    "price": 12.75,
+    "picture": "card.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Exfoliating Face Scrub",
+    "description": "Gently removes dead skin cells and unclogs pores for a fresh glow.",
+    "price": 18.25,
+    "picture": "card.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Nourishing Hair Oil",
+    "description": "A blend of natural oils that strengthens and adds shine to your hair.",
+    "price": 21.50,
+    "picture": "rose.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Refreshing Facial Mist",
+    "description": "Instantly cools and refreshes your skin with botanical extracts.",
+    "price": 10.99,
+    "picture": "card.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Tinted Moisturizer SPF 30",
+    "description": "Hydrates, evens skin tone, and protects against UV rays.",
+    "price": 27.00,
+    "picture": "green.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Charcoal Peel-Off Mask",
+    "description": "Detoxifies pores and removes blackheads with activated charcoal.",
+    "price": 15.60,
+    "picture": "card.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Shea Butter Body Lotion",
+    "description": "Deeply nourishes dry skin leaving it soft and smooth.",
+    "price": 13.40,
+    "picture": "rose.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Eyebrow Definer Pencil",
+    "description": "Defines and shapes brows with precision and long-lasting formula.",
+    "price": 9.95,
+    "picture": "green.jpg"
+  }
+]

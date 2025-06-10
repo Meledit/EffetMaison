@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const CardCont = styled.div`
-    width: 400px;
-    height: 500px;
+    width: 350px;
+    height: 450px;
     border-radius: 15px;
     position: relative;
     overflow: hidden;
@@ -35,8 +35,14 @@ export const CardBlur = styled.div`
 `;
 
 export const CardTitle = styled.div`
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: ${props => props.hovered ? "40%" : "10%"};
+    transition: 0.5s;
 `;
 
 export const CardContent = styled.div`
@@ -44,33 +50,42 @@ export const CardContent = styled.div`
     flex-direction: column;
     gap: 20px;
     position: absolute;
-    width: 100%;
-    left: 40px;
-    bottom: ${props => props.hovered ? "10%" : "-33%"};
+    width: 80%;
+    left: 50%;
+    transform: ${props => props.hovered ? "translate(-50%, 0%)" : "translate(-50%, 100%)"};
+    bottom: ${props => props.hovered ? "7%" : "0"};
     transition: 0.5s;
 `;
 
 export const CardText = styled.div`
     transition: 0.5s;
-    width: 80%;
+    width: 100%;
+    font-size: 1rem;
 `;
 
 export const CardButtons = styled.div`
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
 `;
 
 export const CardCart = styled.div`
     width: 55%;
     background-color: #000;
-    height: 50px;
+    height: 40px;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 200px;
     cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        background: rgb(236, 202, 135);
+        color: #000;
+        transform: scale(1.05);
+    }
 `;
 
 export const CardSave = styled.div`
@@ -78,13 +93,22 @@ export const CardSave = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #000;
-    height: 50px;
+    height: 40px;
     aspect-ratio: 1;
     border-radius: 1000px;
     cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        background: rgb(236, 202, 135);
+        color: #000;
+        transform: scale(1.05);
+    }
 `;
 
 export const CardSaveImg = styled.img`
     width: 40%;
     aspect-ratio: 1;
+    transition: 0.5s;
+    filter: ${props => props.saveHovered ? "invert(1)" : "invert(0)"};
 `;

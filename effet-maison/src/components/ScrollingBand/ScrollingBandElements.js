@@ -13,7 +13,7 @@ const loop = keyframes`
 export const ScrollingBandCont = styled.div`
     width: 100%;
     height: 25vh;
-    background: #000;
+    background: #284239;
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -45,7 +45,7 @@ export const ScrollingBandContent = styled.div`
 
 export const ScrollingBandText = styled.div`
     font-size: 4rem;
-    color: #fff;
+    color: #F8D794;
     white-space: nowrap;
     font-family: "Petit Formal Script", cursive;
 `;

@@ -9,19 +9,21 @@ function Nav( { cart , links, refs } ) {
 
     function handleClick(i) {
         setCurrent(i);
-        refs[i]();
     }
 
   return (
     <NavContainer>
-        <NavLogo>L'Effet Maison</NavLogo>
+        <NavLogo to="/">L'Effet Maison</NavLogo>
         <NavLinks>
-            {links.map((item, index) => (
-                <NavLink key={index} onClick={()=> handleClick(index)}>
-                    <NavLinkText>{item}</NavLinkText>
-                    <NavLinkBar canShow={current == index} />
-                </NavLink>
-            ))}
+            <NavLink to="/" onClick={()=> handleClick(1)}>
+                <NavLinkText>Home</NavLinkText>
+                <NavLinkBar canShow={current == 1} />
+            </NavLink>
+
+            <NavLink to="/search" onClick={()=> handleClick(2)}>
+                <NavLinkText>Catalog</NavLinkText>
+                <NavLinkBar canShow={current == 2} />
+            </NavLink>
         </NavLinks>
 
         <NavExtras> 
